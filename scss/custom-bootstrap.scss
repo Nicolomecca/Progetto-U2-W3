@@ -1,0 +1,46 @@
+@import "functions";
+@import "variables";
+
+$new-primary:#002C2B;
+$new-secondary:#FFF2C8;
+$new-tertiary:#00A19B;
+$new-info:#000000;
+$new-light: #001211;
+
+$new-them-colors:(
+    'primary':$new-primary,
+    'secondary':$new-secondary,
+    'tertiary':$new-tertiary,
+    'info':$new-info,
+    'light':$new-light
+
+);
+
+$theme-colors:map-merge($theme-colors, $new-them-colors );
+
+$new-h1-font-size: 32px;                
+$new-h2-font-size: 24px;               
+$new-h3-font-size: 18px;              
+$new-h4-font-size: 16px;              
+$new-h5-font-size: 14px;               
+$new-h6-font-size: 12px; 
+$new-h7-font-size: 40px; 
+$new-h8-font-size: 50px; 
+
+
+$new-font-sizes:(
+    1:$new-h1-font-size,
+    2:$new-h2-font-size,
+    3:$new-h3-font-size,
+    4:$new-h4-font-size,
+    5:$new-h5-font-size,
+    6:new-h6-font-size,
+    7:$new-h7-font-size,
+    8:$new-h8-font-size
+);
+
+
+
+$font-sizes:map-merge($font-sizes, $new-font-sizes );
+
+@import './bootstrap.scss';

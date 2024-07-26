@@ -1,0 +1,29 @@
+.card-img-top{
+   height:300px
+}
+
+
+.heroes {
+   background-image: url("https://image-tc.galaxy.tf/wijpeg-z46u8jgeozfk0zrcft7a6toq/cover-23003_wide.jpg?crop=0%2C0%2C1200%2C675");
+   background-size: cover;
+   height: 500px;
+   filter: blur(4px);
+ }
+ 
+ .heroes h1 {
+   filter: none;
+ }
+ html{
+  height: 100vh;
+ }
+ body{
+  height: 100%;
+ }
+ .scale-effect {
+  transition: transform 0.5s; 
+}
+
+.scale-effect:hover {
+  transform: scale(1.05); 
+}
+@import './custom-bootstrap.scss'
